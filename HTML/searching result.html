@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wakeel - Lawyer Listing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="s-s/Style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Wakeel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Flights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trips</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a class="nav-link" href="#"><i class="bi bi-person-circle fs-4"></i></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container container-box">
+        <h5>3,400+ results</h5>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card position-relative">
+                    <img src="s-s/boy.png" class="card-img-top" alt="Lawyer">
+                    <div class="bookmark"><i class="bi bi-bookmark"></i></div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <h6 class="card-title mb-0"><a href="LAWYER profile/index.html" target="_blank" rel="noopener noreferrer">Alia Bhat</a>t</h6>
+                        </div>
+                        <p class="card-text">I will be your business legal consultant</p>
+                        <p class="fw-bold">From 5000 PKR</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card position-relative">
+                    <img src="s-s/girl.png" class="card-img-top" alt="Lawyer">
+                    <div class="bookmark"><i class="bi bi-bookmark"></i></div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <h6 class="card-title mb-0"><a href="LAWYER profile/index.html" target="_blank" rel="noopener noreferrer">David Pascal</a></h6>
+                        </div>
+                        <p class="card-text">I will be your business legal consultant</p>
+                        <p class="fw-bold">From 10000 PKR</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card position-relative">
+                    <img src="s-s/boy.png" class="card-img-top" alt="Lawyer">
+                    <div class="bookmark"><i class="bi bi-bookmark"></i></div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <h6 class="card-title mb-0"><a href="LAWYER profile/index.html" target="_blank" rel="noopener noreferrer">Shafeeq Ali</a></h6>
+                        </div>
+                        <p class="card-text">I will be your business legal consultant</p>
+                        <p class="fw-bold">From 8000 PKR</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card position-relative">
+                    <img src="s-s/girl.png" class="card-img-top" alt="Lawyer">
+                    <div class="bookmark"><i class="bi bi-bookmark"></i></div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <h6 class="card-title mb-0"><a href="LAWYER profile/index.html" target="_blank" rel="noopener noreferrer"></a>Lagetra Roy</h6>
+                        </div>
+                        <p class="card-text">I will be your business legal consultant</p>
+                        <p class="fw-bold">From 9000 PKR</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card position-relative">
+                    <img src="s-s/boy.png" class="card-img-top" alt="Lawyer">
+                    <div class="bookmark"><i class="bi bi-bookmark"></i></div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <h6 class="card-title mb-0"> <a href="LAWYER profile/index.html" target="_blank" rel="noopener noreferrer">Mia Kosiva</a></h6>
+                        </div>
+                        <p class="card-text">I will be your business legal consultant</p>
+                        <p class="fw-bold">From 5000 PKR</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card position-relative">
+                    <img src="s-s/girl.png" class="card-img-top" alt="Lawyer">
+                    <div class="bookmark"><i class="bi bi-bookmark"></i></div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <h6 class="card-title mb-0"><a href="LAWYER profile/index.html" target="_blank" rel="noopener noreferrer">Mr Downy</a></h6>
+                        </div>
+                        <p class="card-text">I will be your business legal consultant</p>
+                        <p class="fw-bold">From 5000 PKR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+                const bookmarkIcons = document.querySelectorAll(".bookmark i");
+
+                bookmarkIcons.forEach(icon => {
+                    icon.addEventListener("click", function () {
+                        if (this.classList.contains("bi-bookmark")) {
+                            this.classList.remove("bi-bookmark");
+                            this.classList.add("bi-bookmark-fill");
+                        } else {
+                            this.classList.remove("bi-bookmark-fill");
+                            this.classList.add("bi-bookmark");
+                        }
+                    });
+                });
+            });
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
