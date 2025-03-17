@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lawyer Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand" href="#">Wakeel</a>
+        <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link text-white mx-3" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white mx-3" href="#">More Services</a></li>
+                <li class="nav-item"><a class="nav-link text-white mx-3" href="#">Get Pro</a></li>
+            </ul>
+        </div>
+        <i class="bi bi-person-circle text-white fs-5 ms-3"></i>
+
+    </div>
+</nav>
+<div class="container mt-4" id="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card custom-card p-4">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <img src="girl.png" class="rounded-circle profile-img" alt="Profile">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap">
+                                <h3 class="fw-bold mb-0">Alia Bhatt</h3>
+                            
+                                <button class="btn btn-outline-light chat-btn px-4 py-2">Chat</button>
+                            
+                                <h5 class="fw-bold mb-0">From 5000 PKR</h5>
+                            
+                                <i class="bi bi-bookmark fs-4"></i>
+                            </div>
+
+                        <p class="text-white">Senior Advocate at Washington High Court</p>
+
+                            <p class="fw-bold text-warning">14 Case Wins Out Of 18 ✅</p>
+                            <p class="rating">
+                                ⭐⭐⭐⭐⭐ <span class="text-white">4.8</span>
+                            </p>
+                            <p class="description text-white">
+                                <span id="short-text">
+                                    Legal services for modern entrepreneurs and businesses. As a licensed U.S. lawyer with over a decade of
+                                    experience...
+                                </span>
+                                <span id="full-text" style="display: none;">
+                                    I provide premium legal services to established entrepreneurs, small businesses, and high-growth tech companies.
+                                    Legal services for modern entrepreneurs and businesses. As a licensed U.S. lawyer with over a decade of
+                                    experience,
+                                    I provide premium legal services to established entrepreneurs, small businesses, and high-growth tech companies.
+                                </span>
+                            </p>
+                            <button id="see-more-btn" class="btn btn-outline-light">See More</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card custom-card p-4">
+                    
+                    <h6 class="fw-bold mt-2">What people loved about this Lawyer</h6>
+                    <div class="d-flex align-items-center mt-3">
+                        <img src="boy.png" class="rounded-circle reviewer-img me-3"
+                            alt="Reviewer">
+                        <div>
+                            <p class="fw-bold mb-0">David Roy</p>
+                            <p class="text-warning mb-1">★★★★★</p>
+                            <p class="mb-0">The best legal consultation I have ever had! Margaret truly values
+                                relationships and clearly has your best interest at heart. I love custom solutions like
+                                this.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <img src="boy.png" class="rounded-circle reviewer-img me-3" alt="Reviewer">
+                        <div>
+                            <p class="fw-bold mb-0">David Roy</p>
+                            <p class="text-warning mb-1">★★★★★</p>
+                            <p class="mb-0">The best legal consultation I have ever had! Margaret truly values
+                                relationships .</p>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+            const bookmarkIcon = document.querySelector(".bi-bookmark");
+
+            bookmarkIcon.addEventListener("click", function () {
+                this.classList.toggle("bi-bookmark");
+                this.classList.toggle("bi-bookmark-fill");
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+        const seeMoreBtn = document.getElementById("see-more-btn");
+        const shortText = document.getElementById("short-text");
+        const fullText = document.getElementById("full-text");
+
+        seeMoreBtn.addEventListener("click", function ()
+         {
+            if (fullText.style.display === "none") {
+            fullText.style.display = "inline";  
+        shortText.style.display = "none";  
+        seeMoreBtn.textContent = "See Less"; 
+         } else  {
+            fullText.style.display = "none";  
+        shortText.style.display = "inline"; 
+        seeMoreBtn.textContent = "See More"; 
+            }
+        });
+        });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

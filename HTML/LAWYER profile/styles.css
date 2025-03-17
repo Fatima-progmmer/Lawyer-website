@@ -1,0 +1,175 @@
+
+body {
+    background-color: #1c1c1c;
+    font-family: Arial, sans-serif;
+}
+
+.custom-navbar {
+    background-color: #111;
+    padding: 15px 0;
+}
+
+
+.main-container {
+    background-color: #898989;
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+.custom-card {
+    background-color: #898989;
+    border-radius: 12px;
+    color: white;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.profile-img {
+    width: 220px;
+    height: 220px;
+    border: 3px solid white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+
+.chat-btn {
+    border-radius: 20px;
+    padding: 6px 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.chat-btn:hover {
+    background-color: #f4c542;
+    color: black;
+    transform: scale(1.05);
+}
+
+
+.rating {
+    font-size: 1.2rem;
+    color: #f4c542;
+}
+
+
+.description {
+    color: #ccc;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+}
+
+
+.reviewer-img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.reviewer-img:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.profile-icon {
+    display: inline-block;
+    animation: bounce 1.5s infinite;
+}
+
+#container {
+    background-color: #898989;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.custom-navbar {
+    background-color: #111;
+    padding: 15px 0;
+    animation: slideDown 0.8s ease-in-out forwards;
+    opacity: 0;
+}
+
+.custom-navbar .nav-link {
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #f4c542 !important;
+    transform: scale(1.1);
+}
+
+.profile-icon {
+    display: inline-block;
+    animation: bounce 1.5s infinite;
+    cursor: pointer;
+}
+
+.navbar .dropdown-menu {
+    background-color: #222;
+    border: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.navbar .dropdown-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar .dropdown-item {
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #f4c542;
+    color: black;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
