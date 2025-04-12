@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create New Case</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .form-card {
+      background-color: #808080;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-card h4 {
+      background-color: #3c4251;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+    .form-control {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+      color: white;
+      border-radius: 0;
+    }
+    .form-control::placeholder {
+      color: #dcdcdc;
+    }
+    .btn-outline-dark-blue {
+      color: #3c4251;
+      border: 2px solid #3c4251;
+      background-color: transparent;
+      font-weight: 600;
+    }
+    .btn-outline-dark-blue:hover {
+      background-color: #3c4251;
+      color: white;
+    }
+    .btn-white {
+      background-color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-card text-center">
+    <h4>Create New Case</h4>
+    <form id="caseForm">
+      <div class="mb-3 text-start">
+        <input type="text" class="form-control" placeholder="Case Title" name="caseTitle" required />
+      </div>
+      <div class="mb-3 text-start">
+        <input type="text" class="form-control" placeholder="Description" name="description" required />
+      </div>
+
+      <div id="collaborators" class="mb-3 text-start">
+        <!-- Collaboration added here -->
+      </div>
+
+      <div class="mb-3">
+        <button type="button" class="btn btn-outline-dark-blue" onclick="addCollaborator()">Add Collaborator</button>
+      </div>
+      <button type="submit" class="btn btn-white px-5">Create</button>
+    </form>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let collaboratorCount = 0;
+
+    function addCollaborator() {
+      collaboratorCount++;
+      const container = document.getElementById('collaborators');
+
+      const input = document.createElement('input');
+      input.type = 'email';
+      input.name = `collaborator${collaboratorCount}`;
+      input.placeholder = `Collaborator ${collaboratorCount} Email`;
+      input.classList.add('form-control', 'mb-2');
+      input.required = true;
+
+      container.appendChild(input);
+    }
+
+    document.getElementById('caseForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Case Created Successfully!');
+      // Add AJAX or backend Here
+    });
+  </script>
+</body>
+</html>
+
